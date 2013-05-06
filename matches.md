@@ -60,7 +60,7 @@ This endpoint returns the list of 100 matches, ordered by internal ID.
 }
 ```
 
-PATCH /matches/:id 
+PATCH /matches/{id}
 ------------------
 
 This endpoint is for the client to update our record based on their result.
@@ -70,8 +70,14 @@ This endpoint is for the client to update our record based on their result.
 
 **Parameters**:
 
-  - `:id`: The specific Makindo ID for the match record you're attempting to update.
-  - `:status`: The state of the match in the client's system.
+  - `status` (string): The state of the match in the client's system. Possible values:
+    * `found`
+    * `ambiguous`
+    * `missing`
+
+**Example**:
+
+    https://api.makindo.io/matches/5989?status=found
 
 **Statuses**:
 
