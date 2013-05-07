@@ -50,12 +50,12 @@ This endpoint returns the list of 100 matches, ordered by internal ID.
                 "name": "tiguan",
                 "questions": [
                     {
-                      "body": "Do you like vehicles?",
-                      "answer: "Yes"
+                        "body": "Do you like vehicles?",
+                        "answer": "Yes"
                     },
                     {
-                      "body": "Do you like airplanes?",
-                      "answer: "No"
+                        "body": "Doyoulikeairplanes?",
+                        "answer": "No"
                     }
                 ]
             }
