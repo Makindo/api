@@ -49,10 +49,14 @@ This endpoint returns the list of 100 matches, ordered by internal ID.
             "survey": {
                 "name": "tiguan",
                 "questions": [
-                    4,
-                    null,
-                    2,
-                    4
+                    {
+                      "body": "Do you like vehicles?",
+                      "answer: "Yes"
+                    },
+                    {
+                      "body": "Do you like airplanes?",
+                      "answer: "No"
+                    }
                 ]
             }
         }
