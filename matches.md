@@ -64,7 +64,7 @@ This endpoint returns the list of 25 matches, ordered by internal ID.
 }
 ```
 
-PATCH /matches/{id}
+PUTS /matches/{id}
 ------------------
 
 This endpoint is for the client to update our record based on their result.
