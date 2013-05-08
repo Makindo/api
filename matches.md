@@ -26,41 +26,45 @@ This endpoint returns the list of 25 matches, ordered by internal ID.
 
 ``` json
 {
-    "_prev": "https://api.makindo.io/matches?offset=300",
-    "_link": "https://api.makindo.io/matches?offset=400",
-    "_next": "https://api.makindo.io/matches?offset=500",
-    "matches": [
-        {
-            "_link": "https: //api.makindo.io/matches/400",
-            "id": "112",
-            "status": "new",
-            "person": {
-                "name": "John Smith",
-                "location": {
-                    "city": "Seattle",
-                    "state": "WA",
-                    "country": "US"
-                },
-                "age": {
-                    "minimum": 40,
-                    "maximum": 50
-                }
-            },
-            "survey": {
-                "name": "tiguan",
-                "questions": [
-                    {
-                        "body": "Do you like vehicles?",
-                        "answer": "Yes"
-                    },
-                    {
-                        "body": "Do you like airplanes?",
-                        "answer": "No"
-                    }
-                ]
-            }
+  "meta": {
+    "prev": "https://api.makindo.io/matches?offset=300",
+    "link": "https://api.makindo.io/matches?offset=400",
+    "next": "https://api.makindo.io/matches?offset=500"
+  },
+  "matches": [
+    {
+      "meta": {
+        "link": "https: //api.makindo.io/matches/400"
+      },
+      "id": "112",
+      "status": "new",
+      "person": {
+        "name": "John Smith",
+        "location": {
+          "city": "Seattle",
+          "state": "WA",
+          "country": "US"
+        },
+        "age": {
+          "minimum": 40,
+          "maximum": 50
         }
-    ]
+      },
+      "survey": {
+        "name": "tiguan",
+        "questions": [
+          {
+            "body": "Do you like vehicles?",
+            "answer": "Yes"
+          },
+          {
+            "body": "Do you like airplanes?",
+            "answer": "No"
+          }
+        ]
+      }
+    }
+  ]
 }
 ```
 
