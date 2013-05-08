@@ -43,7 +43,7 @@ This endpoint returns the list of 25 matches, ordered by internal ID.
         "location": {
           "city": "Seattle",
           "state": "WA",
-          "country": "US"
+          "country": "United States"
         },
         "age": {
           "minimum": 40,
@@ -85,7 +85,9 @@ This endpoint is for the client to update our record based on their result.
 
 **Example**:
 
-    https://api.makindo.io/matches/5989?status=found
+    PUT http://api.makindo.io/matches/5989
+    
+    {"status":"found"}
 
 **Statuses**:
 
