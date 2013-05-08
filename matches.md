@@ -7,18 +7,18 @@ The resource is intended to detail how a `person` in our system answered questio
 GET /matches
 ------------
 
-This endpoint returns the list of 100 matches, ordered by internal ID.
+This endpoint returns the list of 25 matches, ordered by internal ID.
 
   - **Authenticated?** Yes
   - **Response?** Yes
 
 **Parameters**:
 
-  - `:offset`: The last ID you want the next 100 matches to be after.
+  - `:offset`: The last ID you want the next 25 matches to be after.
 
 **Statuses**:
 
-  - `200`: Everything went OK and record was successfully updated.
+  - `200`: Everything went OK and records were returned.
   - `401`: Client's API key was either missing or incorrect.
   - `500`: The server is having problems.
 
@@ -54,7 +54,7 @@ This endpoint returns the list of 100 matches, ordered by internal ID.
                         "answer": "Yes"
                     },
                     {
-                        "body": "Doyoulikeairplanes?",
+                        "body": "Do you like airplanes?",
                         "answer": "No"
                     }
                 ]
