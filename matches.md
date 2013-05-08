@@ -85,10 +85,9 @@ This endpoint is for the client to update our record based on their result.
 
 **Example**:
 
-    PUT http://api.makindo.io/matches/5989
-``` json    
+    PUT http://api.makindo.io/matches/5989 
     {"status":"found"}
-```
+
 
 **Statuses**:
 
