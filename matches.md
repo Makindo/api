@@ -91,7 +91,7 @@ This endpoint is for the client to update our record based on their result.
 
 **Statuses**:
 
-  - `200`: Everything went OK and record was successfully updated.
+  - `200`: Everything went OK and record was successfully updated and returned.
   - `401`: Client's API key was either missing or incorrect.
   - `409`: The body of the request was malformed.
   - `422`: There was something wrong with the record. **NOTE:** Response body contains errors
