@@ -7,7 +7,7 @@ The resource is intended to detail how a `person` in our system answered questio
 GET /matches
 ------------
 
-This endpoint returns the list of 25 matches, ordered by internal ID.
+This endpoint returns the list of 10 matches, ordered by internal ID.
 
   - **Authenticated?** Yes
   - **Response?** Yes
