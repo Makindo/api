@@ -14,7 +14,7 @@ This endpoint returns the list of 25 matches, ordered by internal ID.
 
 **Parameters**:
 
-  - `:offset`: The last ID you want the next 25 matches to be after.
+  - `:offset`: The last ID you want the next 10 matches to be after.
 
 **Statuses**:
 
@@ -27,9 +27,9 @@ This endpoint returns the list of 25 matches, ordered by internal ID.
 ``` json
 {
   "meta": {
-    "prev": "https://api.makindo.io/matches?offset=300",
-    "link": "https://api.makindo.io/matches?offset=400",
-    "next": "https://api.makindo.io/matches?offset=500"
+    "prev": "https://api.makindo.io/matches?offset=10",
+    "link": "https://api.makindo.io/matches?offset=20",
+    "next": "https://api.makindo.io/matches?offset=30"
   },
   "matches": [
     {
