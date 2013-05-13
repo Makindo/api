@@ -26,46 +26,93 @@ This endpoint returns the list of 10 matches, ordered by internal ID.
 
 ``` json
 {
-  "meta": {
-    "prev": "https://api.makindo.io/matches?offset=10",
-    "link": "https://api.makindo.io/matches?offset=20",
-    "next": "https://api.makindo.io/matches?offset=30"
+  "meta" : {
+    "next" : "http://api.makindo.io/matches?offset=10",
+    "link" : "http://api.makindo.io/matches?offset=0",
+    "prev" : null
   },
-  "matches": [
+  "matches" : [
     {
-      "meta": {
-        "link": "https: //api.makindo.io/matches/400"
-      },
-      "id": "112",
-      "status": "new",
-      "person": {
-        "name": "John Smith",
-        "location": {
-          "city": "Seattle",
-          "state": "WA",
-          "country": "United States"
-        },
-        "age": {
-          "minimum": 40,
-          "maximum": 50
-        }
-      },
-      "survey": {
-        "name": "tiguan",
-        "questions": [
-          {
-            "body": "Do you like vehicles?",
-            "answer": "Yes"
+      "match" : {
+        "status" : "new",
+        "person" : {
+          "location" : {
+            "city" : "Columbus",
+            "country" : "United States",
+            "state" : "OH"
           },
-          {
-            "body": "Do you like airplanes?",
-            "answer": "No"
-          }
-        ]
+          "id" : 6,
+          "age" : {
+            "maximum" : "?",
+            "minimum" : "?"
+          },
+          "name" : "Diane Shaw Coleman"
+        },
+        "survey" : {
+          "id" : 3,
+          "questions" : [
+            {
+              "answer" : "yes",
+              "body" : "Q1:\tAre you a licensed driver? Please press one if you are a licensed driver and press two if you are not."
+            },
+            {
+              "answer" : "Somewhat likely",
+              "body" : "How likely is it that you will be in the market to purchase or lease a car in the next year?  Press one if it is very likely, press two if it is somewhat likely, press three if it is somewhat unlikely and press four if it is very unlikely.    "
+            }
+          ],
+          "name" : "Joint script  (#3)"
+        },
+        "id" : 1,
+        "meta" : {
+          "link" : "http://api.makindo.io/matches/1"
+        }
       }
-    }
-  ]
-}
+    },
+    {
+      "match" : {
+        "status" : "new",
+        "person" : {
+          "location" : {
+            "city" : "Eastern",
+            "country" : "United States",
+            "state" : "KY"
+          },
+          "id" : 38,
+          "age" : {
+            "maximum" : "?",
+            "minimum" : "?"
+          },
+          "name" : "Priscilla Geer"
+        },
+        "survey" : {
+          "id" : 3,
+          "questions" : [
+            {
+              "answer" : "yes",
+              "body" : "Q1:\tAre you a licensed driver? Please press one if you are a licensed driver and press two if you are not."
+            },
+            {
+              "answer" : "01\tVery likely",
+              "body" : "How likely is it that you will be in the market to purchase or lease a car in the next year?  Press one if it is very likely, press two if it is somewhat likely, press three if it is somewhat unlikely and press four if it is very unlikely.    "
+            },
+            {
+              "answer" : "4-door sedan",
+              "body" : "What kind of vehicle are you considering?  Please press one if it is a 2-door coupe, press two if it is a 2-door sports car, press three if it is a 4-door sedan, press four if it is a 4-door performance sedan, press five if it is a compact SUV, press six if it is a full size SUV, press seven if it is a minivan or van, press 8 if it is a pick-up truck."
+            },
+            {
+              "answer" : "20K-30K",
+              "body" : "Thinking about how much would you consider paying for your next new car, press one if it is under $20,000, press two if it is $20,000 up to $30,000, press 3 if it is $30,000 up to $40,000, press four if it is $40,000 up to $70,000, press five if it is $70,000 up to $100,000 and press six if it is more than $100,000."
+            }
+          ],
+          "name" : "Joint script  (#3)"
+        },
+        "id" : 2,
+        "meta" : {
+          "link" : "http://api.makindo.io/matches/2"
+        }
+      }
+    },
+  
 ```
 
 PUT /matches/{id}
