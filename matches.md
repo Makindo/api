@@ -53,11 +53,11 @@ This endpoint returns the list of 10 matches, ordered by internal ID.
           "questions" : [
             {
               "answer" : "yes",
-              "body" : "Q1:\tAre you a licensed driver? Please press one if you are a licensed driver and press two if you are not."
+              "name" : "Q1"
             },
             {
               "answer" : "Somewhat likely",
-              "body" : "How likely is it that you will be in the market to purchase or lease a car in the next year?  Press one if it is very likely, press two if it is somewhat likely, press three if it is somewhat unlikely and press four if it is very unlikely.    "
+              "name" : "Q2"
             }
           ],
           "name" : "Joint script  (#3)"
