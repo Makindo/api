@@ -41,35 +41,48 @@ This endpoint returns the list of 10 matches, ordered by internal ID.
             "country" : "United States",
             "state" : "OH"
           },
-          "id" : 6,
+          "locations": [
+            {
+              "country": "United States",
+              "state": "OH"
+            }
+          ]
           "age" : {
-            "maximum" : "?",
-            "minimum" : "?"
+            "maximum" : 25,
+            "minimum" : 20
           },
-          "name" : "Diane Shaw Coleman"
+          "name" : "Diane Coleman",
+          "names": [
+            {
+              "family": "Kirk",
+              "personal": "James"
+            },
+            {
+              "alias": "Jim"
+            }
+          ]
         },
         "survey" : {
-          "id" : 3,
           "questions" : [
             {
-              "answer" : "yes",
+              "answer" : "Yes.",
               "name" : "Q1"
             },
             {
-              "answer" : "Somewhat likely",
+              "answer" : "Somewhat likely.",
               "name" : "Q2"
             }
           ],
-          "name" : "Joint script  (#3)"
+          "name" : "Joint script (#3)"
         },
         "id" : 1,
         "meta" : {
           "link" : "http://api.makindo.io/matches/1"
         }
       }
-    },
- 
-  
+    }
+  ]
+}
 ```
 
 PUT /matches/{id}
@@ -86,6 +99,7 @@ This endpoint is for the client to update our record based on their result.
     * `found`
     * `ambiguous`
     * `missing`
+    * `failed`
 
 **Example**:
 
