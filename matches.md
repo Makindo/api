@@ -51,15 +51,16 @@ This endpoint returns the list of 10 matches, ordered by internal ID.
             "maximum" : 25,
             "minimum" : 20
           },
-          "name" : "Diane Coleman",
+          "name" : "James Kirk",
           "names": [
             {
               "family": "Kirk",
               "personal": "James"
-            },
-            {
-              "alias": "Jim"
             }
+          ],
+          "aliases": [
+            "Jim",
+            "Jimbo"
           ]
         },
         "survey" : {
