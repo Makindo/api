@@ -26,63 +26,63 @@ This endpoint returns the list of 10 matches, ordered by internal ID.
 
 ``` json
 {
-  "meta" : {
-    "next" : "http://api.makindo.io/matches?offset=10",
-    "link" : "http://api.makindo.io/matches?offset=0",
-    "prev" : null
-  },
-  "matches" : [
-    {
-      "match" : {
-        "status" : "new",
-        "person" : {
-          "location" : {
-            "city" : "Columbus",
-            "country" : "United States",
-            "state" : "OH"
-          },
-          "locations": [
-            {
-              "country": "United States",
-              "state": "OH"
+    "meta": {
+        "next": "http://api.makindo.io/matches?offset=10",
+        "link": "http://api.makindo.io/matches?offset=0",
+        "prev": null
+    },
+    "matches": [
+        {
+            "match": {
+                "status": "new",
+                "person": {
+                    "location": {
+                        "city": "Columbus",
+                        "country": "United States",
+                        "state": "OH"
+                    },
+                    "locations": [
+                        {
+                            "country": "United States",
+                            "state": "OH"
+                        }
+                    ],
+                    "age": {
+                        "maximum": 25,
+                        "minimum": 20
+                    },
+                    "name": "James Kirk",
+                    "names": [
+                        {
+                            "family": "Kirk",
+                            "personal": "James"
+                        }
+                    ],
+                    "aliases": [
+                        "Jim",
+                        "Jimbo"
+                    ]
+                },
+                "survey": {
+                    "name": "Joint script (#3)",
+                    "questions": [
+                        {
+                            "answer": "Yes.",
+                            "name": "Q1"
+                        },
+                        {
+                            "answer": "Somewhat likely.",
+                            "name": "Q2"
+                        }
+                    ]
+                },
+                "id": 1,
+                "meta": {
+                    "link": "http://api.makindo.io/matches/1"
+                }
             }
-          ]
-          "age" : {
-            "maximum" : 25,
-            "minimum" : 20
-          },
-          "name" : "James Kirk",
-          "names": [
-            {
-              "family": "Kirk",
-              "personal": "James"
-            }
-          ],
-          "aliases": [
-            "Jim",
-            "Jimbo"
-          ]
-        },
-        "survey" : {
-          "questions" : [
-            {
-              "answer" : "Yes.",
-              "name" : "Q1"
-            },
-            {
-              "answer" : "Somewhat likely.",
-              "name" : "Q2"
-            }
-          ],
-          "name" : "Joint script (#3)"
-        },
-        "id" : 1,
-        "meta" : {
-          "link" : "http://api.makindo.io/matches/1"
         }
-      }
-    }
-  ]
+    ]
 }
 ```
 
