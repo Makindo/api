@@ -14,7 +14,7 @@ This endpoint returns the list of 10 matches, ordered by internal ID.
 
 **Parameters**:
 
-  - `:offset`: The last ID you want the next 10 matches to be after.
+  - `:offset`: The `id` you want to start with for this page.
 
 **Statuses**:
 
@@ -34,7 +34,6 @@ This endpoint returns the list of 10 matches, ordered by internal ID.
     "matches": [
         {
             "match": {
-                "status": "new",
                 "person": {
                     "location": {
                         "city": "Columbus",
@@ -86,8 +85,8 @@ This endpoint returns the list of 10 matches, ordered by internal ID.
 }
 ```
 
-PUT /matches/{id}
-------------------
+PATCH /matches/{{id}}
+---------------------
 
 This endpoint is for the client to update our record based on their result.
 
@@ -96,17 +95,11 @@ This endpoint is for the client to update our record based on their result.
 
 **Parameters**:
 
-  - `status` (string): The state of the match in the client's system. Possible values:
-    * `found`
-    * `ambiguous`
-    * `missing`
-    * `failed`
-
 **Example**:
 
-    PUT http://api.makindo.io/matches/5989 
-    {"status":"found"}
-
+    curl
+      -x PATCH http://api.makindo.io/persons/5989
+      -b "{'status': 'found'}
 
 **Statuses**:
 
