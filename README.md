@@ -6,6 +6,7 @@ Resources
 ---------
 
   - [Matches](/matches.md)
+  - [Matches](/persons.md)
 
 
 Request Headers
