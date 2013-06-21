@@ -34,6 +34,8 @@ This endpoint returns the list of 25 persons, ordered by internal ID.
 
 **Response**:
 
+The `names` and `locations` are arrays of pssible alternate name and location data.
+
 ``` json
 {
     "meta": {
