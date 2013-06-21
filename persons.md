@@ -55,44 +55,32 @@ The `names` and `locations` are arrays of pssible alternate name and location da
                 "country": "United States", 
                 "state": "KY"
             }, 
-            "name": "Brittni Bremner", 
-            "names": [
-                {
-                    "created_at": "2013-06-20T22:16:19.303Z", 
-                    "data": {
-                        "first": "Brittni", 
-                        "last": "Bremner", 
-                        "middle": null
-                    }, 
-                    "family": "Bremner", 
-                    "id": 6740, 
-                    "person_id": 3355, 
-                    "personal": "Brittni", 
-                    "provider": "pipl", 
-                    "updated_at": "2013-06-21T00:01:40.057Z"
-                }
             "locations": [
                 {
-                    "city": "Louisville", 
+                    "city": "Sand Springs", 
                     "country": "United States", 
-                    "data": {
-                        "city": "Louisville", 
-                        "country": "United States", 
-                        "state": "KY"
-                    }, 
-                    "id": 75711, 
-                    "latitude": null, 
-                    "longitude": null, 
-                    "person_id": 3486, 
-                    "provider": "bing", 
-                    "query": null, 
-                    "source_id": 213506, 
-                    "source_type": "Profile", 
-                    "state": "KY", 
+                    "state": "OK", 
                     "zip": null
                 }, 
-                
+                {
+                    "city": "Tulsa", 
+                    "country": "United States", 
+                    "state": "OK", 
+                    "zip": null
+                }, 
+            "name": "Diane Coleman", 
+            "names": [
+                {
+                    "family": null, 
+                    "personal": "Diana"
+                }, 
+                {
+                    "family": "Coleman", 
+                    "personal": "Diane"
+                }
             ]
+
+
         }, 
         ...            
                     
