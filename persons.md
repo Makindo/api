@@ -35,7 +35,65 @@ This endpoint returns the list of 25 persons, ordered by internal ID.
 **Response**:
 
 ``` json
-
+{
+    "meta": {
+        "link": "http://api.makindo.io/persons?offset=200", 
+        "next": "http://api.makindo.io/persons?offset=300", 
+        "prev": "http://api.makindo.io/persons?offset=100"
+    }, 
+    "persons": [
+        {
+            "age": {
+                "maximum": 36, 
+                "minimum": 55
+            }, 
+            "id": 3355, 
+            "location": {
+                "city": "Louisville", 
+                "country": "United States", 
+                "state": "KY"
+            }, 
+            "name": "Brittni Bremner", 
+            "names": [
+                {
+                    "created_at": "2013-06-20T22:16:19.303Z", 
+                    "data": {
+                        "first": "Brittni", 
+                        "last": "Bremner", 
+                        "middle": null
+                    }, 
+                    "family": "Bremner", 
+                    "id": 6740, 
+                    "person_id": 3355, 
+                    "personal": "Brittni", 
+                    "provider": "pipl", 
+                    "updated_at": "2013-06-21T00:01:40.057Z"
+                }
+            "locations": [
+                {
+                    "city": "Louisville", 
+                    "country": "United States", 
+                    "data": {
+                        "city": "Louisville", 
+                        "country": "United States", 
+                        "state": "KY"
+                    }, 
+                    "id": 75711, 
+                    "latitude": null, 
+                    "longitude": null, 
+                    "person_id": 3486, 
+                    "provider": "bing", 
+                    "query": null, 
+                    "source_id": 213506, 
+                    "source_type": "Profile", 
+                    "state": "KY", 
+                    "zip": null
+                }, 
+                
+            ]
+        }, 
+        ...            
+                    
 ```
 
 
