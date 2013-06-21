@@ -9,7 +9,7 @@ GET /persons
 ------------
 
 This endpoint is used for gathering the persons we have for your account.
-This endpoint returns the list of 10 persons, ordered by internal ID.
+This endpoint returns the list of 25 persons, ordered by internal ID.
 
   - **Authenticated?** Yes
   - **Response?** Yes
@@ -42,7 +42,7 @@ This endpoint returns the list of 10 persons, ordered by internal ID.
 PATCH /persons/{{id}}
 ---------------------
 
-This endpoint is used for the client to tell is if they've found a person in their personal database.
+This endpoint is used for the client to tell us if they've found a person in their personal database.
 
   - **Authenticated?** Yes
   - **Response?** Yes
