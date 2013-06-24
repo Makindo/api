@@ -129,14 +129,13 @@ This endpoint is used for the client to tell us if they've found a person in the
 
 **Response**
 
-``` json
-
-```
+The updated JSON object for the person is returned.
 
 
 **Statuses**:
 
   - `200`: Everything went OK and record was successfully updated and returned.
+  - `400`: The request was improperly formed or not understood.
   - `401`: Client's API key was either missing or incorrect.
   - `409`: The body of the request was malformed.
   - `422`: There was something wrong with the record. **NOTE:** Response body contains errors
