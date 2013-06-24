@@ -34,7 +34,7 @@ This endpoint returns the list of 25 persons, ordered by internal ID.
 
 **Response**:
 
-The `names` and `locations` are arrays of pssible alternate name and location data.
+The `names` and `locations` are arrays of possible alternate name and location data.
 
 ``` json
 {
@@ -104,7 +104,7 @@ This endpoint is used for the client to tell us if they've found a person in the
     * `"missing"`
     * `"failed"`
   - `name` (string): The name you believe to be the Person's real name.
-  - `gender` (string): The gender you believe to be how Person identifies. Possible values:
+  - `gender` (string): The gender you believe to be how the Person identifies. Possible values:
     * `"female"`
     * `"male"`
     * `"other"`
@@ -116,7 +116,7 @@ This endpoint is used for the client to tell us if they've found a person in the
     - `longitude` (string): A float, represented as a string.
   - `age` (object)
     - `minimum` (integer): The minimum age of the Person.
-    - `maximum` (integer): The maximum age of a Person
+    - `maximum` (integer): The maximum age of the Person
   - `external_id` (string): Your internal ID for this Person.
 
 
