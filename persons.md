@@ -627,7 +627,8 @@ This endpoint is used for the client to tell us if they've found a person in the
                     "minimum": 25
                 },
                 "external_id": "543",
-                "name": "Diane Coleman"
+                "name": "Diane Coleman",
+                "status": "found"
             }
         }' \
       | python -mjson.tool
