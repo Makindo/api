@@ -606,7 +606,7 @@ This endpoint is used for the client to tell us if they've found a person in the
     - `maximum` (integer): The maximum age of the Person
   - `external_id` (string): Your internal ID for this Person.
   - `data` (object): Similar to location object but for additional data
-    - `income`(integer): the reported income of the Person
+    - `income`(string): the reported income of the Person
 
 **Example**:
 
@@ -623,7 +623,7 @@ This endpoint is used for the client to tell us if they've found a person in the
                     "state": "CA"
                 },
                 "data": {
-                  "income": 100000
+                  "income": "under 150,000"
                 },
                 "gender": "male",
                 "age": {
