@@ -599,8 +599,6 @@ This endpoint is used for the client to tell us if they've found a person in the
     - `city` (string): A full city name.
     - `state` (string): The abbreviated state/province name.
     - `country` (string): A full country name.
-    - `latitude` (string): A float, represented as a string.
-    - `longitude` (string): A float, represented as a string.
   - `age` (object)
     - `minimum` (integer): The minimum age of the Person.
     - `maximum` (integer): The maximum age of the Person
